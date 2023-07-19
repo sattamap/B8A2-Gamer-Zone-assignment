@@ -221,6 +221,7 @@ nav {
     width: 100%;
     opacity: 0;
     background: #0000006b;
+    border: 3px solid #FF42A5;
 
 }
 
@@ -270,15 +271,26 @@ nav {
     width: 82%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    gap: 254px;
 
 }
 
 .poster-content {
     width: 50%;
     margin-left: 200px;
+    text-align: right;
 }
 
-
+.poster-title {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .poster-img {
     width: 50%;
@@ -308,7 +320,7 @@ nav {
 
 }
 
-
+/* gaming section starts here */
 
 .gaming-container {
     margin-top: 250px;
@@ -328,6 +340,7 @@ nav {
     border: 2px solid #FF42A5;
     border-radius: 50px;
     color: #FF42A5;
+    cursor: pointer;
 }
 
 .gaming-zone1 {
@@ -349,7 +362,7 @@ nav {
 .footer-container {
     width: 100%;
     background: #0B0223;
-    
+
 }
 
 .footer-logo {
@@ -412,5 +425,5 @@ nav {
     font-size: 16px;
     font-weight: 500;
     padding-bottom: 30px;
-    
+
 }
