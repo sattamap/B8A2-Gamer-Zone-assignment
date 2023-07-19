@@ -12,12 +12,12 @@ nav {
 }
 
 .nav-container {
-    min-height: 50px;
+    min-height: 30px;
     display: flex;
     align-items: center;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 37px 10px 37px 200px;
+    padding: 15px 10px 15px 235px;
 }
 
 .logo-container {
@@ -116,10 +116,38 @@ nav {
 }
 
 .banner-container p {
+    text-align: left;
     color: #534C64;
     font-size: 13px;
     font-weight: 500;
     text-transform: lowercase;
+    padding-left: 200px;
+}
+
+
+.banner-btn-pink {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-right: 15px;
+    border: none;
+}
+
+.banner-btn-blue {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 48px;
+    background: #4EC5F7;
+    padding: 10px 20px;
+    /* margin-right: 5px; */
+    border: none;
 }
 
 .banner-img {
@@ -137,27 +165,56 @@ nav {
 }
 
 
+/* banner section style ends here */
 
-.banner-btn-pink {
-    color: #FFF;
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    border-radius: 48px;
-    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
-    padding: 10px 20px;
-    margin-right: 15px;
-    border: none;
+.online-game-container {
+    display: grid;
+    max-width: 65%;
+    margin: 40px auto 0;
+    min-height: 400px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    
+    gap: 13px;
+    position: relative;
 }
 
-.banner-btn-blue {
-    color: #FFF;
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    border-radius: 48px;
-    background: #4EC5F7;
-    padding: 10px 20px;
-    /* margin-right: 5px; */
-    border: none;
+.online-game-container img {
+    opacity: 1;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.watch-btn-box1  {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 12%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.online-game-container:hover .online-game-container img{
+    opacity: 0.3;
+}
+.online-game-container:hover .watch-btn-box1{
+    opacity: 1;
+}
+
+.watch-btn {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.online-game-container p {
+    color: #534C64;
+    font-size: 12px;
+    font-weight: 500;
+
 }
