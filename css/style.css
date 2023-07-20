@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;800&family=Work+Sans:wght@400;700;800&display=swap');
 
-body {
+/* body {
     font-family: 'Lato', sans-serif;
     font-family: 'Work Sans', sans-serif;
-}
+} */
+
 
 /* navbar styles start here */
 nav {
@@ -292,6 +293,10 @@ nav {
     -webkit-text-fill-color: transparent;
 }
 
+.poster-img-container{
+    width: 50%;
+}
+
 .poster-img {
     width: 50%;
 }
@@ -323,8 +328,9 @@ nav {
 /* gaming section starts here */
 
 .gaming-container {
-    margin-top: 250px;
-    margin-bottom: 200px;
+    max-width: 1400px;
+    margin-top: 80px;
+    margin-bottom: 10px;
 }
 
 .gaming-icon {
@@ -343,16 +349,15 @@ nav {
     cursor: pointer;
 }
 
-.gaming-zone1 {
-    display: flex;
-    justify-content: center;
+.gaming-zone{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 90px;
+    row-gap: 25px;
+    margin-left: 100px;
 }
 
-.gaming-zone2 {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
+
 
 
 /* footer section starts here */
@@ -360,7 +365,7 @@ nav {
 
 
 .footer-container {
-    width: 100%;
+    max-width: 100;
     background: #0B0223;
 
 }
@@ -386,9 +391,11 @@ nav {
 
     font-size: 18px;
     font-weight: 600;
-    display: flex;
+    display: grid;
+    grid-template-columns: 8% 8% 8% 8% 8% 8%;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
+    column-gap: 2%;
 }
 
 .footer-link-bar a {

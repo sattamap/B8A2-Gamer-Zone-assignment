@@ -34,11 +34,13 @@
     .banner-container {
         flex-direction: column;
         width: max-content;
-        background-size: 930px;
+        background-size: 950px;
+        margin-left: 100px;
     }
 
     .banner-content {
         text-align: center;
+        padding-left: 170px
     }
 
 
@@ -61,8 +63,14 @@
         min-height: 425px;
         width: 240%;
     }
+
     .poster {
         flex-direction: column;
+    }
+
+    .poster-content {
+        width: 100%;
+        margin-left: 570px;
     }
 
     .poster-img {
@@ -70,9 +78,32 @@
         padding-left: 286px;
     }
 
+    .gaming-zone {
+        display: grid;
+        grid-template-columns: 20% 20% 20%;
+        padding: auto;
+        row-gap: 14%;
+        margin-left: 100px px;
+        column-gap: 80%;
+    }
+
+
 
     .footer-container {
         width: 100%;
+    }
+    .footer-link-bar {
+        width: 100%;
+    
+        font-size: 18px;
+        font-weight: 600;
+        display: grid;
+        grid-template-columns: 8% 8% 8% 8% 8% 8%;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20%;
+        row-gap: 8%;
+        padding-left: 700px;
     }
 
 }
